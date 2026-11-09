@@ -1,0 +1,129 @@
+/* ==========================================================================
+   BHUVISHA.EXE - PASTEL RETRO COMPUTER OS DESIGN TOKENS
+   Palette: Warm Cream Desktop, Dusty Pink, Lavender, Sage Mint,
+   Powder Blue, Soft Peach, Charcoal, and White.
+   ========================================================================== */
+
+:root {
+  /* Warm Cream Desktop Surfaces */
+  --bg-desktop: #FAF7F2;
+  --bg-desktop-accent: #F4EFE6;
+  --bg-pattern-dot: rgba(52, 51, 59, 0.09);
+  
+  --surface-white: #FFFFFF;
+  --surface-cream: #FFFDF9;
+  --surface-panel: #FAF6EF;
+  --surface-inset: #F2ECE0;
+  --surface-border-subtle: #E5DDD0;
+  
+  /* Core Pastel Palette */
+  --pastel-pink: #F4BFD0;
+  --pastel-pink-soft: #FDF5F8;
+  --pastel-pink-border: #E5A9BC;
+  --pastel-pink-text: #963F5B;
+  
+  --pastel-lavender: #DCCEFF;
+  --pastel-lavender-soft: #F8F6FF;
+  --pastel-lavender-border: #C5B2FA;
+  --pastel-lavender-text: #5A4499;
+  
+  --pastel-sage: #C5DFCE;
+  --pastel-sage-soft: #F3F8F5;
+  --pastel-sage-border: #ACCBBB;
+  --pastel-sage-text: #396348;
+  
+  --pastel-blue: #B8CAE8;
+  --pastel-blue-soft: #F3F7FD;
+  --pastel-blue-border: #9EB5D8;
+  --pastel-blue-text: #36537E;
+  
+  --pastel-peach: #E9B59D;
+  --pastel-peach-soft: #FDF6F2;
+  --pastel-peach-border: #D89F84;
+  --pastel-peach-text: #8E4C2C;
+  
+  /* Contrast Charcoal & Text */
+  --charcoal: #34333B;
+  --charcoal-soft: #4E4C56;
+  --charcoal-muted: #6B6875;
+  --charcoal-light: #9491A0;
+  --text-main: #34333B;
+  --text-muted: #5E5B69;
+  --text-soft: #858291;
+  
+  /* Window System Chrome */
+  --window-bg: #FFFDF9;
+  --window-border: #34333B;
+  --window-header-bg: #B8CAE8; /* Powder blue default */
+  --window-header-fg: #34333B;
+  --window-header-stripe: rgba(255, 255, 255, 0.35);
+  
+  /* Subtle Retro Borders & Shadows */
+  --retro-border: 1.5px solid #34333B;
+  --retro-border-thick: 2px solid #34333B;
+  --retro-border-soft: 1px solid rgba(52, 51, 59, 0.16);
+  
+  --retro-shadow-sm: 2px 2px 0px #34333B;
+  --retro-shadow: 3px 3px 0px #34333B;
+  --retro-shadow-lg: 5px 5px 0px #34333B;
+  --retro-shadow-active: 1px 1px 0px #34333B;
+  
+  /* Radii */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 9999px;
+  
+  /* Typography - Clean, readable DM Sans / Nunito with Silkscreen for tiny retro details */
+  --font-body: 'DM Sans', 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'DM Sans', 'Nunito', sans-serif;
+  --font-retro: 'Silkscreen', monospace;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  /* Backward-compatible Palette Aliases mapped to Pastel Tokens */
+  --candy-blue: var(--pastel-blue);
+  --mint-green: var(--pastel-sage);
+  --bubblegum-pink: var(--pastel-pink);
+  --butter-yellow: var(--pastel-peach);
+  --cherry-red: #D9738C;
+  --electric-blue: var(--pastel-blue);
+  
+  --candy-blue-soft: var(--pastel-blue-soft);
+  --mint-green-soft: var(--pastel-sage-soft);
+  --butter-yellow-soft: var(--pastel-peach-soft);
+  --bubblegum-pink-soft: var(--pastel-pink-soft);
+
+  --panel-bg: var(--surface-cream);
+  --panel-inset: var(--surface-inset);
+  --panel-border: var(--surface-border-subtle);
+
+  --pixel-border: var(--retro-border);
+  --pixel-border-sm: var(--retro-border);
+  --pixel-shadow: var(--retro-shadow);
+  --pixel-shadow-sm: var(--retro-shadow-sm);
+  --pixel-shadow-lg: var(--retro-shadow-lg);
+  --pixel-shadow-active: var(--retro-shadow-active);
+}
+
+/* Theme Accents (Switching pastel window headers) */
+[data-theme='blue'] {
+  --window-header-bg: #B8CAE8;
+}
+
+[data-theme='pink'] {
+  --window-header-bg: #F4BFD0;
+}
+
+[data-theme='mint'] {
+  --window-header-bg: #C5DFCE;
+}
+
+[data-theme='lavender'] {
+  --window-header-bg: #DCCEFF;
+}
+
+[data-theme='peach'] {
+  --window-header-bg: #E9B59D;
+}
+
